@@ -6,14 +6,10 @@ function App() {
 
   return (
     <div className="App">
- 
-      <div>TEST</div> 
-   
-card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-      </div>
+      <div>TEST</div>
+      <button onClick={() => setCount((count) => count + 1)}>
+        count is {count}
+      </button>
     </div>
   );
 }
