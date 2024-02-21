@@ -1,6 +1,8 @@
 import { useState } from "react";
 import "./App.css";
 import { jsPDF } from "jspdf";
+import { Button } from "antd";
+import Nav from "./components/nav";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -11,11 +13,15 @@ function App() {
   };
   return (
     <div className="App">
-      <div>TEST</div>
+      <div>
+        <Nav />
+      </div>
       <button onClick={() => setCount((count) => count + 1)}>
         count is {count}
       </button>
-      <button onClick={handleSavePdf}>PDF TEST</button>
+      <Button type="primary" onClick={handleSavePdf}>
+        PDF TEST
+      </Button>
     </div>
   );
 }
